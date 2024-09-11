@@ -1,0 +1,144 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Base infrastructure for the Terraform remote backend
+
+Parameters:
+  CommonTags:
+    Description: Common tags to be applied to resources
+    Type: CommaDelimitedList
+    Default: "eks-gha-karpenter,IaC-CFN"
+
+  prefix:
+    Description: Prefix used for naming AWS resources
+    Type: String
+    Default: "eksghakrpntr"
+
+  ddbPrefix:
+    Description: Prefix used for naming DynamoDB resource
+    Type: String
+    Default: "eksghakrpntr"
+
+Resources:
+  KmsBucketKey:
+    Type: AWS::KMS::Key
+    Properties: 
+      Description: Key to encrypt the terraform backend bucket 
+      Enabled: True
+      EnableKeyRotation: True
+      KeyPolicy: 
+        Version: 2012-10-17
+        Id: key-s3-bucket-terraform-backend
+        Statement:
+          - Sid: Enable IAM User Permissions 
+            Effect: Allow
+            Principal:
+              AWS: !Sub arn:aws:iam::${AWS::AccountId}:root
+            Action: 'kms:*'
+            Resource: '*'
+      Tags: 
+      - 
+        Key: "Project"
+        Value: !Select [ 0, !Ref CommonTags ]
+      - 
+        Key: "Creation_Method"
+        Value: !Select [ 1, !Ref CommonTags ]
+
+  TerraformRemoteBackendBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: !Sub "${prefix}-${AWS::AccountId}-${AWS::Region}-terraform-state-bucket"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - ServerSideEncryptionByDefault:
+            SSEAlgorithm: 'aws:kms'
+            KMSMasterKeyID: !GetAtt KmsBucketKey.KeyId
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      VersioningConfiguration:
+        Status: Enabled
+      LoggingConfiguration:
+        DestinationBucketName: !Ref AccessLogsBucket
+        LogFilePrefix: 'logs/'
+      Tags: 
+      - 
+        Key: "Project"
+        Value: !Select [ 0, !Ref CommonTags ]
+      - 
+        Key: "Creation_Method"
+        Value: !Select [ 1, !Ref CommonTags ]
+
+  TerraformRemoteBackendBucketBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref TerraformRemoteBackendBucket
+      PolicyDocument:
+        Statement:
+          - Sid: DenyDeletingTerraformStateFiles
+            Effect: Deny
+            Principal: "*"
+            Action: "s3:DeleteObject"
+            Resource: !Sub "arn:aws:s3:::${TerraformRemoteBackendBucket}/*"
+
+  AccessLogsBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: !Sub ${prefix}-${AWS::AccountId}-${AWS::Region}-tf-backend-accesslogs
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+        - ServerSideEncryptionByDefault:
+            SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      VersioningConfiguration:
+        Status: Enabled
+      Tags: 
+      - 
+        Key: "Project"
+        Value: !Select [ 0, !Ref CommonTags ]
+      - 
+        Key: "Creation_Method"
+        Value: !Select [ 1, !Ref CommonTags ]
+
+  TerrraformRemoteBackendDDB:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub ${ddbPrefix}-terraform-backend
+      DeletionProtectionEnabled: true
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: LockID
+          AttributeType: S
+      KeySchema:
+        - AttributeName: LockID
+          KeyType: HASH
+      SSESpecification:
+        SSEEnabled: true
+        SSEType: KMS
+        KMSMasterKeyId: !GetAtt KmsBucketKey.Arn
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
+      Tags: 
+      - 
+        Key: "Project"
+        Value: !Select [ 0, !Ref CommonTags ]
+      - 
+        Key: "Creation_Method"
+        Value: !Select [ 1, !Ref CommonTags ]
+
+Outputs:
+  TerraformBackendBucketName:
+    Value: !Ref TerraformRemoteBackendBucket
+    Export:
+      Name: 'TerraformBackendBucketName'
+
+  TerraformBackendDynamoDBName:
+    Value: !Ref TerrraformRemoteBackendDDB
+    Export:
+      Name: 'TerraformBackendDynamoDBName'
