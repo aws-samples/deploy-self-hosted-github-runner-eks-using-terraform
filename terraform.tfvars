@@ -11,7 +11,7 @@ pat_secret_name = "ghapat"
 
 runner_set_parameters = {
   eks-small-apg = {
-    githubConfigUrl = "https://github.com/nsb413/deploy-self-hosted-github-runner-using-terraform-and-karpenter"
+    githubConfigUrl = "<Provide GitHub repository URL>"
     minRunners      = 2
     maxRunners      = 4
     node-pool-name  = "eks-small-apg"
@@ -20,7 +20,7 @@ runner_set_parameters = {
     memory          = "2Gi"
   }
   eks-medium-apg = {
-    githubConfigUrl = "https://github.com/nsb413/deploy-self-hosted-github-runner-using-terraform-and-karpenter"
+    githubConfigUrl = "<Provide GitHub repository URL>"
     minRunners      = 1
     maxRunners      = 4
     node-pool-name  = "eks-medium-apg"
@@ -29,7 +29,7 @@ runner_set_parameters = {
     memory          = "4Gi"
   }
   eks-large-apg = {
-    githubConfigUrl = "https://github.com/nsb413/deploy-self-hosted-github-runner-using-terraform-and-karpenter"
+    githubConfigUrl = "<Provide GitHub repository URL>"
     minRunners      = 1
     maxRunners      = 4
     node-pool-name  = "eks-large-apg"
