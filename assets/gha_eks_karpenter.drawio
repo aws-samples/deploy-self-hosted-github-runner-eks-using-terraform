@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.7" pages="3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.12" pages="4">
   <diagram id="KEuzDcXVnNoga-QX5XB3" name="take-1">
     <mxGraphModel dx="1674" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -194,66 +194,189 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="P_juAWwFYpYFFDkqiZU_" name="workflow">
+  <diagram id="aMY2aJ_xsYM4tJSVh0qf" name="worfkflow">
     <mxGraphModel dx="1674" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-1" target="Sj0j7OZNfD1wgNdWpfi5-2">
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="240" as="targetPoint" />
+            <mxPoint x="80" y="240" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nbo94zkaKHGuYjhfBM87-4" target="Nbo94zkaKHGuYjhfBM87-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="233" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nbo94zkaKHGuYjhfBM87-4" target="Nbo94zkaKHGuYjhfBM87-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="124" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-4" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.github" vertex="1" parent="1">
+          <mxGeometry x="200" y="195" width="75" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-5" value="GHA Run" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="105" y="195" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-6" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="120" y="250" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nbo94zkaKHGuYjhfBM87-8" target="Nbo94zkaKHGuYjhfBM87-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-1" value="User runs GHA workflow" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-8" value="Job in Pending State" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="209" width="90" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-9" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="300" y="250" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nbo94zkaKHGuYjhfBM87-11" target="Nbo94zkaKHGuYjhfBM87-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-11" value="ARC" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="540" y="209" width="90" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nbo94zkaKHGuYjhfBM87-13" target="Nbo94zkaKHGuYjhfBM87-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="765" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-13" value="Pending Runner Pods" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="209" width="90" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nbo94zkaKHGuYjhfBM87-15" target="Nbo94zkaKHGuYjhfBM87-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-15" value="Karpenter" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="720" y="360" width="90" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nbo94zkaKHGuYjhfBM87-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-17" value="Register to GitHub" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="360" width="90" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nbo94zkaKHGuYjhfBM87-28" target="Nbo94zkaKHGuYjhfBM87-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-19" value="Runner Available" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="100" width="90" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-20" value="Job Success" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="100" width="90" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-21" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="490" y="250" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-22" value="4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="670" y="250" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-23" value="5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="770" y="290" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-24" value="9" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="490" y="80" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-25" value="7" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="490" y="340" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-26" value="6" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="670" y="340" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-27" value="8" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="245" y="147" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-29" value="10" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="670" y="80" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-30" value="User" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.user;" vertex="1" parent="1">
+          <mxGeometry x="10" y="199" width="70" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nbo94zkaKHGuYjhfBM87-32" target="Nbo94zkaKHGuYjhfBM87-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-32" value="Runner pods" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="360" width="90" height="47" as="geometry" />
+        </mxCell>
+        <mxCell id="qhn2NKYsGnehsMhNjAcF-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nbo94zkaKHGuYjhfBM87-19" target="Nbo94zkaKHGuYjhfBM87-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="124" as="sourcePoint" />
+            <mxPoint x="720" y="124" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nbo94zkaKHGuYjhfBM87-28" value="Job Scheduled" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="100" width="90" height="47" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="P_juAWwFYpYFFDkqiZU_" name="workflow_detailed">
+    <mxGraphModel dx="1674" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-1" target="Sj0j7OZNfD1wgNdWpfi5-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-1" value="User runs GHA workflow" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="230" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-2" target="Sj0j7OZNfD1wgNdWpfi5-3">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-2" target="Sj0j7OZNfD1wgNdWpfi5-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-2" value="ARC controller identifies pending GHA workflows" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-2" value="ARC controller identifies pending GHA workflows" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="410" y="230" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-3" target="Sj0j7OZNfD1wgNdWpfi5-4">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-3" target="Sj0j7OZNfD1wgNdWpfi5-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-3" value="ARC creates runner pods on Amazon EKS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-3" value="ARC creates runner pods on Amazon EKS" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="600" y="230" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-4" target="Sj0j7OZNfD1wgNdWpfi5-5">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-4" target="Sj0j7OZNfD1wgNdWpfi5-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-4" value="Karpenter identifies pending runner pods and provisions right sized EC2 instances" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-4" value="Karpenter identifies pending runner pods and provisions right sized EC2 instances" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="780" y="230" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-5" target="Sj0j7OZNfD1wgNdWpfi5-6">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-5" target="Sj0j7OZNfD1wgNdWpfi5-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-5" value="Amazon EC2 instances join the Kubernetes cluster" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-5" value="Amazon EC2 instances join the Kubernetes cluster" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="970" y="230" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-6" target="Sj0j7OZNfD1wgNdWpfi5-7">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-6" target="Sj0j7OZNfD1wgNdWpfi5-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-6" value="Runner pods enter Running state" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-6" value="Runner pods enter Running state" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="970" y="360" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-7" target="Sj0j7OZNfD1wgNdWpfi5-8">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-7" target="Sj0j7OZNfD1wgNdWpfi5-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-7" value="GHA workflows are executed in FIFO order" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-7" value="GHA workflows are executed in FIFO order" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="780" y="360" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-8" target="Sj0j7OZNfD1wgNdWpfi5-9">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-8" target="Sj0j7OZNfD1wgNdWpfi5-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-8" value="Once the GHA workflow is executed, ARC terminates the runner pods" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-8" value="Once the GHA workflow is executed, ARC terminates the runner pods" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="600" y="360" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-9" target="Sj0j7OZNfD1wgNdWpfi5-10">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Sj0j7OZNfD1wgNdWpfi5-9" target="Sj0j7OZNfD1wgNdWpfi5-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-9" value="Karpenter gracefully terminates the EKS workers nodes it provisioned&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-9" value="Karpenter gracefully terminates the EKS workers nodes it provisioned&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="410" y="360" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-10" value="Karpenter terminates the Amazon EC2 instances" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Sj0j7OZNfD1wgNdWpfi5-10" value="Karpenter terminates the Amazon EC2 instances" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="360" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
